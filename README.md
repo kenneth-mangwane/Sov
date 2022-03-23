@@ -2,7 +2,8 @@
 
 <p><img src="https://s3.amazonaws.com/creativetim_bucket/products/92/original/opt_argon_vue_thumbnail.jpg?1534236902" alt="Product Gif" /></p>
 
-<p>Start your the application, run open the solution in visual studio and run the Sov.API Project/p>
+<p>Start the application by opening the solution in visual studio and run the Sov.API Project</p>
+
 
 <h4 id="fully-coded-components">UI</h4>
 
