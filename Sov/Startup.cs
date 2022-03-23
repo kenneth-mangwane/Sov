@@ -35,6 +35,15 @@ namespace Sov
             });
             services.AddScoped<IChuckLogic,ChuckLogic >();
             services.AddScoped<ISWPersonLogic, SWPersonLogic>();
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                                  builder =>
+                                  {
+                                      builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                                  }
+                                  );
+            });
 
         }
 
@@ -51,6 +60,7 @@ namespace Sov
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors();
 
             app.UseAuthorization();
 
